@@ -4752,10 +4752,6 @@ class AppComponent {
     this.analytics = analytics;
     this.seoService = seoService;
   }
-  ngOnInit() {
-    this.analytics.trackPageViews();
-    this.seoService.trackCanonicalChanges();
-  }
   static #_ = this.ɵfac = function AppComponent_Factory(t) {
     return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_core_utils_analytics_service__WEBPACK_IMPORTED_MODULE_0__.AnalyticsService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_core_utils_seo_service__WEBPACK_IMPORTED_MODULE_1__.SeoService));
   };
